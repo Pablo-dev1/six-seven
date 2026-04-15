@@ -174,6 +174,9 @@ document.addEventListener('DOMContentLoaded', () => {
             message.textContent = 'Login realizado com sucesso! Carregando painel...';
             message.classList.add('success');
             message.classList.remove('error');
+            if (authSection) {
+                authSection.classList.add('hidden');
+            }
             authCard.classList.add('hidden');
             dashboard.classList.remove('hidden');
             createCharts();
