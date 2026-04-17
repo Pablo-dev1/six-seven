@@ -10,123 +10,18 @@
     <header>
         <nav>
             <div class="logo">SIX-SEVEN</div>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="admin.html" class="active">Admin</a></li>
-            </ul>
+            <div class="nav-actions">
+                <ul><li><a href="index.html">Home</a></li></ul>
+            </div>
         </nav>
     </header>
 
     <main>
         <section class="auth-page">
-            <div class="auth-card" id="auth-card">
-                <span class="hero-label">Área do Administrador</span>
-                <h1>Login de Acesso</h1>
-                <p>Entre com usuário e senha para acessar o painel administrativo.</p>
-                <form id="admin-login-form">
-                    <label for="admin-username">Usuário
-                        <input type="text" id="admin-username" placeholder="Seu usuário" required>
-                    </label>
-                    <label for="admin-password">Senha
-                        <input type="password" id="admin-password" placeholder="Sua senha" required>
-                    </label>
-                    <div id="admin-message" class="form-message"></div>
-                    <button type="submit" class="cta-button">Entrar</button>
-                </form>
-            </div>
-        </section>
-
-        <section class="admin-dashboard hidden" id="admin-dashboard">
-            <div class="dashboard-layout">
-                <aside class="dashboard-sidebar">
-                    <div class="sidebar-header">
-                        <span class="hero-label">Admin</span>
-                        <h2>Painel</h2>
-                    </div>
-                    <nav class="sidebar-nav">
-                        <button class="sidebar-link active" data-tab="overview">Visão Geral</button>
-                        <button class="sidebar-link" data-tab="finance">Finanças</button>
-                        <button class="sidebar-link" data-tab="clients">Clientes</button>
-                        <button class="sidebar-link" data-tab="reports">Relatórios</button>
-                        <button class="sidebar-link" data-tab="support">Suporte</button>
-                    </nav>
-                </aside>
-                <div class="dashboard-main">
-                    <div class="dashboard-top">
-                        <div class="auth-card dashboard-welcome">
-                            <div class="dashboard-welcome-header">
-                                <span class="hero-label">Painel de Controle</span>
-                                <button id="logoutButton" class="secondary-button">Sair</button>
-                            </div>
-                            <h1>Bem-vindo, Admin</h1>
-                            <p>Monitore finanças, clientes, relatórios e suporte com dados atualizado e métricas claras.</p>
-                        </div>
-                        <div class="dashboard-metrics">
-                            <div class="metric-card">
-                                <span>R$ 254K</span>
-                                <p>Receita no último mês</p>
-                            </div>
-                            <div class="metric-card">
-                                <span>892</span>
-                                <p>Clientes ativos</p>
-                            </div>
-                            <div class="metric-card">
-                                <span>18</span>
-                                <p>Tickets abertos</p>
-                            </div>
-                            <div class="metric-card">
-                                <span>96%</span>
-                                <p>SLA de atendimento</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="dashboard-chart-tabs">
-                        <div class="chart-tab active" id="overview">
-                            <div class="dashboard-chart-grid">
-                                <div class="dashboard-card">
-                                    <h3>Controle de Finanças</h3>
-                                    <canvas id="financeChart"></canvas>
-                                </div>
-                                <div class="dashboard-card">
-                                    <h3>Controle de Clientes</h3>
-                                    <canvas id="clientsChart"></canvas>
-                                </div>
-                                <div class="dashboard-card">
-                                    <h3>Relatórios</h3>
-                                    <canvas id="reportsChart"></canvas>
-                                </div>
-                                <div class="dashboard-card">
-                                    <h3>Suporte</h3>
-                                    <canvas id="supportChart"></canvas>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="chart-tab" id="finance">
-                            <div class="dashboard-card full-card">
-                                <h3>Controle de Finanças</h3>
-                                <canvas id="financeChartTab"></canvas>
-                            </div>
-                        </div>
-                        <div class="chart-tab" id="clients">
-                            <div class="dashboard-card full-card">
-                                <h3>Controle de Clientes</h3>
-                                <canvas id="clientsChartTab"></canvas>
-                            </div>
-                        </div>
-                        <div class="chart-tab" id="reports">
-                            <div class="dashboard-card full-card">
-                                <h3>Relatórios</h3>
-                                <canvas id="reportsChartTab"></canvas>
-                            </div>
-                        </div>
-                        <div class="chart-tab" id="support">
-                            <div class="dashboard-card full-card">
-                                <h3>Suporte</h3>
-                                <canvas id="supportChartTab"></canvas>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+            <div class="auth-bg-shapes">
+                <span class="bg-shape shape-1"></span>
+                <span class="bg-shape shape-2"></span>
+                <span class="bg-shape shape-3"></span>
             </div>
         </section>
     </main>
@@ -134,7 +29,5 @@
     <footer>
         <p>&copy; 2026 SIX-SEVEN. Soluções digitais de alto padrão.</p>
     </footer>
-    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-    <script src="admin.js"></script>
 </body>
 </html>

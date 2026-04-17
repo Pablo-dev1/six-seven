@@ -58,7 +58,17 @@ nav ul {
     margin: 0;
     padding: 0;
     display: flex;
-    gap: 28px;
+    gap: 24px;
+}
+
+.nav-actions {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+}
+
+.top-logout {
+    padding: 10px 18px;
 }
 
 nav ul li a {
@@ -130,7 +140,7 @@ nav ul li a.active {
 }
 
 .cta-button {
-    background-color: #3a3f52;
+    background-color: #2598ca;
     color: #fff;
     padding: 16px 36px;
     text-decoration: none;
@@ -235,7 +245,7 @@ section h2::after {
     gap: 20px;
     margin: 0 auto;
     justify-content: center;
-    max-width: 100%;
+    max-width: 80%;
 }
 
 .feature-item {
@@ -404,251 +414,11 @@ section h2::after {
     padding-right: 42px;
 }
 
-.auth-page,
-.admin-dashboard {
-    min-height: calc(100vh - 100px);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 60px 4%;
-    width: 100%;
-}
-
-.auth-card {
-    width: min(520px, 100%);
-    background: rgba(15, 17, 22, 0.95);
-    border: 1px solid rgba(255, 255, 255, 0.08);
-    border-radius: 24px;
-    padding: 32px;
-    box-shadow: 0 26px 70px rgba(0, 0, 0, 0.24);
-}
-
-.auth-card h1 {
-    font-size: 2rem;
-    margin-bottom: 16px;
-}
-
-.auth-card p {
-    color: #c8c8c8;
-    margin-bottom: 24px;
-    line-height: 1.75;
-}
-
-.auth-card label {
-    display: block;
-    margin-bottom: 16px;
-    color: #ddd;
-    font-size: 0.95rem;
-}
-
-.auth-card input {
-    width: 100%;
-    margin-top: 8px;
-    padding: 14px 16px;
-    border: 1px solid rgba(255, 255, 255, 0.12);
-    border-radius: 14px;
-    background: #0f1218;
-    color: #f1f1f1;
-    font-size: 1em;
-}
-
-.auth-card input::placeholder {
-    color: #777;
-}
-
-.auth-card .form-message {
-    margin-bottom: 18px;
-    min-height: 24px;
-    color: #ffbaba;
-}
-
-.auth-card .success {
-    color: #9df6e4;
-}
-
-.auth-card .error {
-    color: #ff8787;
-}
-
-.admin-dashboard {
-    flex-direction: column;
-    gap: 24px;
-    max-width: 100%;
-    margin: 0 auto;
-    width: 100%;
-}
-
-.dashboard-layout {
-    display: grid;
-    grid-template-columns: 280px minmax(0, 1fr);
-    gap: 24px;
-    width: 100%;
-    min-height: calc(100vh - 180px);
-}
-
-.dashboard-sidebar {
-    background: rgba(255, 255, 255, 0.04);
-    border: 1px solid rgba(255, 255, 255, 0.08);
-    border-radius: 28px;
-    padding: 30px 24px;
-    box-shadow: 0 26px 60px rgba(0, 0, 0, 0.16);
-    display: flex;
-    flex-direction: column;
-    gap: 28px;
-}
-
-.sidebar-header h2 {
-    margin: 12px 0 0;
-    font-size: 2rem;
-    line-height: 1.1;
-}
-
-.sidebar-nav {
-    display: grid;
-    gap: 12px;
-}
-
-.sidebar-link {
-    width: 100%;
-    text-align: left;
-    padding: 14px 18px;
-    background: rgba(255, 255, 255, 0.02);
-    border: 1px solid rgba(255, 255, 255, 0.08);
-    border-radius: 16px;
-    color: #ddd;
-    font-size: 0.98rem;
-    font-weight: 600;
-    cursor: pointer;
-    transition: background-color 0.25s ease, color 0.25s ease, transform 0.25s ease;
-}
-
-.sidebar-link:hover,
-.sidebar-link.active {
-    background: rgba(255, 255, 255, 0.08);
-    color: #fff;
-    transform: translateX(2px);
-}
-
-.dashboard-top {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 24px;
-    width: 100%;
-}
-
-.dashboard-welcome {
-    min-height: 240px;
-    padding: 28px;
-}
-
-.dashboard-welcome-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 14px;
-    margin-bottom: 22px;
-}
-
-.secondary-button {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    padding: 10px 20px;
-    border-radius: 999px;
-    border: 1px solid rgba(255, 255, 255, 0.14);
-    background: rgba(255, 255, 255, 0.04);
-    color: #fff;
-    cursor: pointer;
-    transition: background-color 0.3s ease, transform 0.3s ease;
-}
-
-.secondary-button:hover {
-    background-color: rgba(255, 255, 255, 0.08);
-}
-
-.dashboard-metrics {
-    display: grid;
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-    gap: 18px;
-}
-
-.metric-card {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    padding: 22px;
-    border-radius: 20px;
-    background: rgba(255, 255, 255, 0.05);
-    border: 1px solid rgba(255, 255, 255, 0.08);
-    box-shadow: 0 18px 36px rgba(0, 0, 0, 0.14);
-}
-
-.metric-card span {
-    font-size: 2rem;
-    font-weight: 700;
-    color: #00bcd4;
-}
-
-.metric-card p {
-    margin: 0;
-    color: #d0d0d0;
-}
-
-.dashboard-chart-grid {
-    display: grid;
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-    gap: 22px;
-}
-
-.dashboard-chart-tabs {
-    width: 100%;
-}
-
-.chart-tab {
-    display: none;
-}
-
-.chart-tab.active {
-    display: block;
-}
-
-.dashboard-card {
-    background: rgba(255, 255, 255, 0.05);
-    border: 1px solid rgba(255, 255, 255, 0.08);
-    border-radius: 22px;
-    padding: 24px;
-    box-shadow: 0 16px 34px rgba(0, 0, 0, 0.16);
-}
-
-.dashboard-card.full-card {
-    padding: 30px;
-}
-
-.dashboard-card h3 {
-    margin-top: 0;
-    margin-bottom: 16px;
-    color: #fff;
-}
-
-.dashboard-card canvas {
-    width: 100% !important;
-    height: 320px !important;
-}
-
-.dashboard-card p {
-    color: #d3d3d3;
-    line-height: 1.7;
-    margin: 0;
-}
-
 .hidden {
     display: none;
 }
 
 @media (max-width: 1100px) {
-    .dashboard-top {
-        grid-template-columns: 1fr;
-    }
 }
 
 @media (max-width: 920px) {
@@ -657,19 +427,6 @@ section h2::after {
         grid-template-columns: 1fr;
     }
 
-    .about-content,
-    .contact-grid {
-        gap: 24px;
-    }
-
-    .dashboard-metrics,
-    .dashboard-chart-grid {
-        grid-template-columns: 1fr;
-    }
-
-    .dashboard-welcome {
-        padding: 24px;
-    }
 }
 
 @media (max-width: 620px) {
@@ -695,30 +452,6 @@ section h2::after {
     section {
         width: 92%;
         padding: 40px 0;
-    }
-}
-
-@media (max-width: 1100px) {
-    .dashboard-layout {
-        grid-template-columns: 1fr;
-    }
-
-    .dashboard-sidebar {
-        width: 100%;
-    }
-
-    .dashboard-top {
-        grid-template-columns: 1fr;
-    }
-}
-
-@media (max-width: 920px) {
-    .dashboard-chart-grid {
-        grid-template-columns: 1fr;
-    }
-
-    .dashboard-card canvas {
-        height: 260px !important;
     }
 }
 
